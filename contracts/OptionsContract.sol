@@ -35,7 +35,7 @@ contract OptionsContract is Ownable, ERC20 {
 
     OptionsExchange public optionsExchange;
 
-    mapping(address => Vault) internal vaults;
+    mapping(address => Vault) internal vaults; // 🚩 This is the vault for collateral
 
     address payable[] internal vaultOwners;
 
